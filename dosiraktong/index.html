@@ -26,11 +26,9 @@
         </ul>
       </nav>
       <div class="nav_btn">
-        <a href="">
-          <span></span>
-          <span></span>
-          <span></span>
-        </a>
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
 
     </div>
@@ -86,15 +84,13 @@
           <div class="left"> &lt; </div>
           <div class="right"> &gt; </div>
         </div>
+      </div>
+      <div class="pagination">
         <span class="line"></span>
         <div class="swiper-pagination"></div>
       </div>
 
     </section>
-    <div class="slide_wrap">
-      <div class="slide">
-      </div>
-    </div>
 
     <section id="service">
       <h2><span class="blue_txt">도시락통</span> 서비스 둘러보기</h2>
@@ -157,30 +153,40 @@
     </section>
 
     <section id="banner">
-      <article class="members">
-        <h3>도시락멤버스</h3>
-        <p>하나의 ID로 도시락통의 모든 서비스를
-          <br>이용할 수 있는 통합멤버십.
-          <br>이용 할 수록 커지는 커지는 혜택을 확인해보세요!
-        </p>
-        <div class="bnr_btn">READ MORE</div>
-      </article>
-      <article class="talk">
-        <h3>도시락톡</h3>
-        <p>로밍전화 요금 부담을 확 낮춰주는
-          <br>해외로밍전화 앱 서비스.
-          <br>도시락톡끼리는 365일 무료통화 혜택까지!
-        </p>
-        <div class="bnr_btn">READ MORE</div>
-      </article>
-      <article class="insu">
-        <h3>여행보험도시락</h3>
-        <p>방문국가, 나이 입력하고 보험료 미리보기
-          <br>커피 두 세잔 값으로 보험료는 가볍게,
-          <br>보장은 든든하게!
-        </p>
-        <div class="bnr_btn">READ MORE</div>
-      </article>
+      <div class="swiper mySwiper2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <article class="members">
+              <h3>도시락멤버스</h3>
+              <p>하나의 ID로 도시락통의 모든 서비스를
+                <br>이용할 수 있는 통합멤버십.
+                <br>이용 할 수록 커지는 커지는 혜택을 확인해보세요!
+              </p>
+              <div class="bnr_btn">READ MORE</div>
+            </article>
+          </div>
+          <div class="swiper-slide">
+            <article class="talk">
+              <h3>도시락톡</h3>
+              <p>로밍전화 요금 부담을 확 낮춰주는
+                <br>해외로밍전화 앱 서비스.
+                <br>도시락톡끼리는 365일 무료통화 혜택까지!
+              </p>
+              <div class="bnr_btn">READ MORE</div>
+            </article>
+          </div>
+          <div class="swiper-slide">
+            <article class="insu">
+              <h3>여행보험도시락</h3>
+              <p>방문국가, 나이 입력하고 보험료 미리보기
+                <br>커피 두 세잔 값으로 보험료는 가볍게,
+                <br>보장은 든든하게!
+              </p>
+              <div class="bnr_btn">READ MORE</div>
+            </article>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
@@ -249,6 +255,21 @@
       }
     }
 
+  });
+</script>
+
+<script>
+  var swiper = new Swiper(".mySwiper2", {
+    slidesPerView: 2,
+    spaceBetween: 00,
+    freeMode: true,
+    breakpoints: {
+
+      1024: {
+        slidesPerView: 3, //브라우저가 1024보다 클 때
+        spaceBetween: 0,
+      },
+    },
   });
 </script>
 
