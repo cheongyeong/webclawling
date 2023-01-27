@@ -7,9 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>도시락통</title>
   <link rel="stylesheet" href="css/common/reset.css">
-  
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style_1.css">
 </head>
 
@@ -47,6 +45,9 @@
             <div class="slide_text">
               <h2>도시락통</h2>
               <p>도시락으로 다 통한다, 해외데이터는 도시락통</p>
+              <div class="btn_more hide">자세히보기
+                <span>→</span>
+              </div>
             </div>
           </div>
           <div class="swiper-slide">
@@ -85,6 +86,8 @@
           <div class="left"> &lt; </div>
           <div class="right"> &gt; </div>
         </div>
+        <span class="line"></span>
+        <div class="swiper-pagination"></div>
       </div>
 
     </section>
@@ -180,8 +183,8 @@
       </article>
     </section>
   </main>
-  
-  
+
+
   <footer>
     <a class="topBtn" id="topBtn">↑</a>
     <div>
@@ -202,32 +205,51 @@
 
 <script src="js/main.js"></script>
 <script>
-  
-const topHeader = document.querySelector("#header");
+  const topHeader = document.querySelector("#header");
 
-function scrollEvent(){
-    document.addEventListener("scroll", function(){
-        if(document.documentElement.scrollTop > 0){
-          topHeader.classList.add("scrollShow");
-        }else{
-          topHeader.classList.remove("scrollShow");
-        }
+  function scrollEvent() {
+    document.addEventListener("scroll", function () {
+      if (document.documentElement.scrollTop > 0) {
+        topHeader.classList.add("scrollShow");
+      } else {
+        topHeader.classList.remove("scrollShow");
+      }
     });
-}
+  }
 
-function init(){
+  function init() {
     document.addEventListener("scroll", scrollEvent);
-}
+  }
 
-init();
+  init();
 </script>
 
 
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-				
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
 <!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    loop: true,
+    spaceBetween: 30,
+    effect: "fade",
+    navigation: {
+      nextEl: ".right",
+      prevEl: ".left",
+    },
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      renderBullet: function (index, className) {
+        return '<span class="' + className + '">' + (index + 1) + "</span>";
+      }
+    }
 
-
+  });
+</script>
 
 </html>
