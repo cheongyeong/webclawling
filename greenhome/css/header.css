@@ -51,6 +51,7 @@ a {
   border: 1px solid #d9d9d9;
   border-radius: 100%;
   margin: 10px 1px;
+  background-position: center center;
 }
 
 .gp {
@@ -216,10 +217,10 @@ a {
 
 
 
-@media(max-width: 1200px) {
+@media(max-width: 1240px) {
   .w1200 {
     width: 100%;
-    padding: 0 15px;
+    padding: 0 23px;
     box-sizing: border-box;
   }
 
@@ -228,15 +229,37 @@ a {
     background-size: 112px auto;
   }
 
+  #hd_top ul {
+    line-height: 28px;
+  }
+
   #hd_bot h1 a {
     width: 112px;
     height: 22px;
   }
 
+  .top_left a {
+    margin: 4px 0 0;
+    width: 18px;
+    height: 18px;
+  }
+
+  .top_right a {
+    font-size: 11px;
+  }
+
+  #hd_bot h1 {
+    padding-top: 14px;
+  }
+
   .m_btn {
-    width: 20px;
-    height: 14px;
-    background-position: -15px -22px
+    width: 18px;
+    height: 12px;
+    background-position: -16px -23px
+  }
+
+  .bot_left ul {
+    padding-left: 23px;
   }
 
   .serch {
@@ -268,6 +291,7 @@ a {
     width: 13px;
     height: 13px;
     background-position: -87px -23px;
+    margin: 0 5px;
   }
 
 
@@ -284,6 +308,8 @@ a {
 
   .bot_left ul a {
     font-size: 14px;
+    line-height: 28px;
+    padding: 0 10px;
   }
 
 

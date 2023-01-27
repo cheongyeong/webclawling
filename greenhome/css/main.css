@@ -27,7 +27,7 @@
   font-weight: 700;
   line-height: 27px;
   width: 40px;
-  top: 30px;
+  top: 20px;
 }
 
 .slide_arrow a {
@@ -67,7 +67,7 @@
 
 .thumnail {
   display: flex;
-  padding: 30px 0 50px;
+  padding: 20px 0 50px;
   border-bottom: 2px solid #f2f2f2;
 }
 
@@ -359,6 +359,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 56px;
+}
+
+.bgGray .title_wrap {
+  margin-top: 0;
 }
 
 .title_wrap p {
@@ -480,12 +485,9 @@
 }
 
 
-
-
 .button {
-  display: flex;
-  justify-content: space-between;
-  height: 40px;
+  position: relative;
+  z-index: 10;
 }
 
 .button>div {
@@ -495,16 +497,23 @@
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
-  position: absolute;
+
+
 }
 
 .pre_btn {
+  position: absolute;
+  bottom: -100px;
+  left: -20px;
   background-color: rgba(0, 0, 0, 0.6);
   background-image: url(../img/arrow06_l.png);
+
 }
 
 .next_btn {
-
+  position: absolute;
+  bottom: -100px;
+  right: -20px;
   background-image: url(../img/arrow06_r.png);
   background-color: #009a3e;
 }
@@ -882,7 +891,7 @@
 
 .bgGray {
   background-color: #f2f2f2;
-  margin: 80px 0;
+  margin: 80px 0 0;
   padding-top: 60px;
   padding-bottom: 80px;
 }
@@ -957,6 +966,7 @@
   justify-content: space-between;
   padding: 28px 40px;
   box-sizing: border-box;
+  align-items: center;
 }
 
 .quickLink h4 {
@@ -993,7 +1003,7 @@
   display: none;
 }
 
-@media (max-width:1200px) {
+@media (max-width:1240px) {
   .title_wrap h2 {
     font-size: 23px;
   }
@@ -1033,8 +1043,29 @@
     margin: 30px 0 0;
   }
 
+  .button>div {
+    width: 28px;
+    height: 28px;
+  }
+
+  .mySwiper3 {
+    margin: 0;
+  }
+
   .lanking>div {
     height: 83px;
+  }
+
+  .pre_btn {
+    background-size: 5px auto;
+    left: -14px;
+    bottom: -90px;
+  }
+
+  .next_btn {
+    background-size: 5px auto;
+    right: -14px;
+    bottom: -90px;
   }
 
   .profile .photo {
@@ -1082,9 +1113,25 @@
     width: 100%;
   }
 
+  .bgGray {
+    padding: 42px 0 56px;
+  }
+
   .bgGray .title_wrap {
     padding: 0 15px;
     box-sizing: border-box;
+  }
+
+  .Keyword {
+    padding: 42px 0;
+  }
+
+  .Keyword>ul>li>a {
+
+    padding: 0 22px;
+    line-height: 34px;
+    font-size: 14px;
+    border-radius: 17px;
   }
 
   .guide {
@@ -1095,6 +1142,32 @@
 
   .guide>.swiper-wrapper>.swiper-slide {
     width: 35%;
+  }
+
+  .quickLink>div {
+    padding: 13px 40px;
+  }
+
+  .quickLink h4 {
+    font-size: 14px;
+  }
+
+  .quickLink p {
+    font-size: 13px;
+  }
+
+  .quickLink span {
+    width: 28px;
+    height: 28px;
+  }
+
+  .sell_img {
+    background-position: -300% 0;
+    line-height: 70px;
+  }
+
+  .vvip_img {
+    background-position: 225px 0;
   }
 }
 
