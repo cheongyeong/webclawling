@@ -3,7 +3,9 @@
   font-weight: bold;
 }
 
-
+.w640 {
+  display: none;
+}
 
 
 
@@ -264,7 +266,7 @@ main {
 
 .line {
   display: block;
-  width: 350px;
+  width: 340px;
   height: 2px;
   background-color: #fff;
   position: absolute;
@@ -358,6 +360,7 @@ section>h2 {
   position: relative;
   padding: 10px;
   box-sizing: border-box;
+  line-height: 1;
 }
 
 .sev_a>img {
@@ -381,7 +384,6 @@ section>h2 {
   bottom: 0;
   padding: 60px;
   box-sizing: border-box;
-
 }
 
 .sev_txt>h3 {
@@ -479,8 +481,8 @@ section>h2 {
 
 #banner {
   width: 100%;
-  display: flex;
   height: 400px;
+  display: flex;
   border-top: 1px solid #dadfe6;
 }
 
@@ -497,20 +499,41 @@ section>h2 {
   background-color: #eee;
   background-position: right bottom;
   background-size: 300px auto;
+  position: relative;
 }
 
-.members {
+#banner article>a {
+  display: block;
+}
+
+#banner article>a::after {
+  content: '';
+  display: inline-block;
+  width: 50%;
+  padding-bottom: 45%;
+  position: absolute;
+  background-size: contain;
+}
+
+.members>a::after {
+  right: -40px;
+  bottom: 10px;
+
   background: url(../img/main_banner_figure1.png) no-repeat;
 }
 
 
 
-.talk {
+.talk>a::after {
+  right: -20px;
+  bottom: -40px;
   background: url(../img/main_banner_figure2.png) no-repeat;
 }
 
 
-.insu {
+.insu>a::after {
+  right: -10px;
+  bottom: 0;
   background: url(../img/main_banner_figure3.png) no-repeat;
 }
 
@@ -711,8 +734,6 @@ footer p {
 
   #banner>article {
     padding: 30px;
-
-
   }
 
   #about h3 {
@@ -721,17 +742,30 @@ footer p {
 
   .about_btn {
     margin-top: 50px;
-
   }
-
 
   .sev_txt {
     padding: 30px;
     bottom: 10px;
-
-
-
   }
+
+  .arrows>div {
+    width: 50px;
+    height: 50px;
+  }
+
+  .sev_txt>h3 {
+    font-size: 24px;
+  }
+
+  #banner article>a::after {
+    width: 60%;
+  }
+
+  .talk>a::after {
+    bottom: 0;
+  }
+
 
 
 
@@ -794,7 +828,18 @@ footer p {
     font-size: 30px;
   }
 
+  .arrows>div {
+    color: #fff;
+  }
 
+  .sev_txt>p {
+    font-size: 16px;
+  }
+
+  footer p {
+
+    margin-top: 30px;
+  }
 
 
   #about {
@@ -845,6 +890,10 @@ footer p {
     padding: 40px 0;
   }
 
+  .sev_txt>h3 {
+    font-size: 22px;
+  }
+
 }
 
 
@@ -853,16 +902,113 @@ footer p {
     font-size: 36px;
   }
 
-  .slide_text>p {
-    font-size: 20px;
-  }
-
   footer ul {
     flex-direction: column;
   }
 
   footer ul>li {
     text-align: center;
+  }
+
+  .arrows>div {
+    width: 40px;
+    height: 40px;
+  }
+
+  .swiper-horizontal>.swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 420px;
+  }
+
+
+  .line {
+    width: 230px;
+    bottom: 420px;
+  }
+
+  .swiper-pagination-bullet {
+    width: 30px;
+  }
+
+
+  .swiper-pagination-bullet-active.swiper-pagination-bullet::after {
+    width: 50px;
+  }
+
+  #service {
+    margin: 70px 0;
+  }
+
+  #service>article {
+    margin: -5px;
+  }
+
+  #service a {
+    height: 240px;
+  }
+
+  .sev_a img {
+    transform: translateY(-400px);
+  }
+
+  .sev_txt>h3 {
+    font-size: 20px;
+  }
+
+  .sev_txt {
+    padding: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .about-title {
+    font-size: 30px;
+  }
+
+  #about h3 {
+    font-size: 22px;
+  }
+
+  #about {
+
+    margin-bottom: 70px;
+  }
+
+
+  #banner article>a::after {
+    width: 50%;
+  }
+
+  .members>a::after {
+    bottom: -10px;
+  }
+
+  .talk>a::after {
+    bottom: -10px;
+  }
+
+  .insu>a::after {
+    bottom: -10px;
+  }
+
+  #banner {
+    height: 300px;
+  }
+
+  #banner h3 {
+    font-size: 20px;
+  }
+
+  #banner p {
+    font-size: 15px;
+  }
+
+  footer ul>li::after {
+    display: none;
+  }
+
+  .w640 {
+    display: block;
   }
 
 
