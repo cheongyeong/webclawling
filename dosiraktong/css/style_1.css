@@ -537,15 +537,15 @@ section>h2 {
   background: url(../img/main_banner_figure3.png) no-repeat;
 }
 
-#banner article:nth-child(1):hover {
+#banner article.members:hover {
   background-color: #3891b2;
 }
 
-#banner article:nth-child(2):hover {
+#banner article.talk:hover {
   background-color: #db574f;
 }
 
-#banner article:nth-child(3):hover {
+#banner article.insu:hover {
   background-color: #f0b23a;
 }
 
