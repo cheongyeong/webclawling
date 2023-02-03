@@ -31,7 +31,7 @@ header {
   margin: 5px 0;
 }
 
-.h-logo > a {
+.h-logo>a {
   display: block;
   width: 173px;
   height: 50px;
@@ -54,17 +54,14 @@ header {
   box-sizing: border-box;
 }
 
-.h-nav:hover > .h-nav__bg {
-  /* height: 190px; */
-}
 
-.h-nav > ul {
+.h-nav>ul {
   display: flex;
   align-items: center;
   height: 100%;
 }
 
-.h-nav > ul > li {
+.h-nav>ul>li {
   padding: 0 30px;
   margin: 0 10px;
   position: relative;
@@ -77,17 +74,17 @@ header {
 }
 
 
-.lnb > li > a {
+.lnb>li>a {
   display: block;
   padding: 10px 0;
   color: #777;
   font-size: 0.8rem;
 }
 
-.h-nav > ul > li > a {
-  font-size: 1rem;
+.h-nav>ul>li>a {
+  font-size: 1.063rem;
   color: #181c1c;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .h-icons {
@@ -168,17 +165,21 @@ header {
   html {
     font-size: 14px;
   }
+
   header {
     padding: 30px 40px;
   }
+
   .w100 {
     padding: 0px 40px;
   }
-  .h-nav > ul > li {
+
+  .h-nav>ul>li {
     padding: 0 15px;
     margin: 0;
   }
 }
+
 @media screen and (max-width: 1024px) {
   .w100 {
     padding: 0 20px;
@@ -192,7 +193,7 @@ header {
     display: block;
   }
 
-  .h-logo > a {
+  .h-logo>a {
     width: 126px;
     height: 36px;
     background-size: contain;
@@ -202,6 +203,7 @@ header {
   .h-nav {
     display: none;
   }
+
   .call-text {
     display: none;
   }
@@ -222,6 +224,7 @@ header {
   .sidenav {
     padding-top: 15px;
   }
+
   .sidenav a {
     font-size: 18px;
   }
